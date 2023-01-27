@@ -28,7 +28,9 @@ function App() {
       you know you can expect all of the elements to look the same across all browsers. */}
         <CssBaseline />
         <div className="app">
-          <Sidebar isSidebar={isSidebar} />
+          <Sidebar 
+            // isSidebar={isSidebar} 
+          />
           <main className="content">
             <Topbar 
               // setIsSidebar={setIsSidebar} 

@@ -66,8 +66,9 @@ const Sidebar = () => {
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
+      {/* iconShape="square" -> menu icon will be squared */}
         <Menu iconShape="square">
-          {/* LOGO AND MENU ICON */}
+          {/* MENU collapsable button */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
@@ -111,10 +112,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Sayed Ahmed
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  NTU Admin
                 </Typography>
               </Box>
             </Box>
@@ -133,6 +134,7 @@ const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
+              //t,r,b,l
               sx={{ m: "15px 0 5px 20px" }}
             >
               Data
